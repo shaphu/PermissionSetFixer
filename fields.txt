@@ -1,0 +1,1 @@
+APAC_TestClass_CampaignPropTrigHelper
