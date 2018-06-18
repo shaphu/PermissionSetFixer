@@ -9,35 +9,35 @@
     <visible>false</visible>
   </applicationVisibilities>
   <applicationVisibilities>
-    <application>CBRE_Asset_Services</application>
+    <application>Org_Asset_Services</application>
     <visible>false</visible>
   </applicationVisibilities>
   <applicationVisibilities>
-    <application>CBRE_Asset_Services_Lightning</application>
+    <application>Org_Asset_Services_Lightning</application>
     <visible>false</visible>
   </applicationVisibilities>
   <applicationVisibilities>
-    <application>CBRE_Chatter_Only_Lightning</application>
+    <application>Org_Chatter_Only_Lightning</application>
     <visible>false</visible>
   </applicationVisibilities>
   <applicationVisibilities>
-    <application>CBRE_EMEA_App</application>
+    <application>Org_EMEA_App</application>
     <visible>false</visible>
   </applicationVisibilities>
   <applicationVisibilities>
-    <application>CBRE_EMEA_Lightning_App</application>
+    <application>Org_EMEA_Lightning_App</application>
     <visible>false</visible>
   </applicationVisibilities>
   <applicationVisibilities>
-    <application>CBRE_Opportunity_Alerts_Lightning</application>
+    <application>Org_Opportunity_Alerts_Lightning</application>
     <visible>false</visible>
   </applicationVisibilities>
   <applicationVisibilities>
-    <application>CBRE_Sales</application>
+    <application>Org_Sales</application>
     <visible>false</visible>
   </applicationVisibilities>
   <applicationVisibilities>
-    <application>CBRE_Sales_Lightning</application>
+    <application>Org_Sales_Lightning</application>
     <visible>false</visible>
   </applicationVisibilities>
   <applicationVisibilities>
@@ -437,7 +437,7 @@
     <enabled>false</enabled>
   </classAccesses>
   <classAccesses>
-    <apexClass>CBREException</apexClass>
+    <apexClass>OrgException</apexClass>
     <enabled>false</enabled>
   </classAccesses>
   <classAccesses>
@@ -521,11 +521,11 @@
     <enabled>false</enabled>
   </classAccesses>
   <classAccesses>
-    <apexClass>CampaignBreezeCBREAPAC</apexClass>
+    <apexClass>CampaignBreezeOrgAPAC</apexClass>
     <enabled>false</enabled>
   </classAccesses>
   <classAccesses>
-    <apexClass>CampaignBreezeCBREAPAC_Test</apexClass>
+    <apexClass>CampaignBreezeOrgAPAC_Test</apexClass>
     <enabled>false</enabled>
   </classAccesses>
   <classAccesses>
@@ -2412,7 +2412,7 @@
     <apexClass>syncPageExtension</apexClass>
     <enabled>false</enabled>
   </classAccesses>
-  <description>Given to users with Manager or Support profiles at the country level or above in the role hierarchy.</description>
+  <description>Used to grant view/edit permissions to the Account.Competitor field</description>
   <fieldPermissions>
     <editable>false</editable>
     <field>APAC_Campaign_Space_Relationship__c.APAC_Space__c</field>
@@ -2924,9 +2924,9 @@
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
-    <editable>false</editable>
+    <editable>true</editable>
     <field>Account.Competitor__c</field>
-    <readable>false</readable>
+    <readable>true</readable>
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
@@ -3254,14 +3254,14 @@
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
-    <editable>true</editable>
+    <editable>false</editable>
     <field>Account.Key_Client_Account_for__c</field>
-    <readable>true</readable>
+    <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
-    <editable>true</editable>
+    <editable>false</editable>
     <field>Account.Key_Pursuit_Account_for__c</field>
-    <readable>true</readable>
+    <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
@@ -4930,7 +4930,7 @@
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>Budget_Target__c.CBRE_Professional__c</field>
+    <field>Budget_Target__c.Org_Professional__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
@@ -7320,7 +7320,7 @@
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>CIM_Comp_Inbound__c.CBRE_Deal__c</field>
+    <field>CIM_Comp_Inbound__c.Org_Deal__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
@@ -8935,12 +8935,12 @@
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>CIM_Opportunity_Inbound__c.CBRE_Preferred_Property_Type__c</field>
+    <field>CIM_Opportunity_Inbound__c.Org_Preferred_Property_Type__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>CIM_Opportunity_Inbound__c.CBRE_Role__c</field>
+    <field>CIM_Opportunity_Inbound__c.Org_Role__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
@@ -9435,12 +9435,12 @@
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>CIM_Opportunity_Outbound__c.CBRE_Preferred_Property_Type__c</field>
+    <field>CIM_Opportunity_Outbound__c.Org_Preferred_Property_Type__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>CIM_Opportunity_Outbound__c.CBRE_Role__c</field>
+    <field>CIM_Opportunity_Outbound__c.Org_Role__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
@@ -10405,7 +10405,7 @@
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>CIM_Property_Inbound__c.CBRE_Managed__c</field>
+    <field>CIM_Property_Inbound__c.Org_Managed__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
@@ -12795,7 +12795,7 @@
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>Comp_Relationship__c.Comp_CBRE_Deal__c</field>
+    <field>Comp_Relationship__c.Comp_Org_Deal__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
@@ -12895,12 +12895,12 @@
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>Comp__c.CBRE_Deal__c</field>
+    <field>Comp__c.Org_Deal__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>Comp__c.CBRE_Role__c</field>
+    <field>Comp__c.Org_Role__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
@@ -13405,12 +13405,12 @@
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>Contact.CBRE_Employee_ID__c</field>
+    <field>Contact.Org_Employee_ID__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>Contact.CBRE_Level_of_Engagement__c</field>
+    <field>Contact.Org_Level_of_Engagement__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
@@ -14135,7 +14135,7 @@
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>Contact_Relationship__c.CBRE_Contact__c</field>
+    <field>Contact_Relationship__c.Org_Contact__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
@@ -14870,7 +14870,7 @@
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>FUMO_User__c.CBRE_Employee_ID__c</field>
+    <field>FUMO_User__c.Org_Employee_ID__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
@@ -15580,12 +15580,12 @@
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>Lead.CBRE_Preferred_Property_Type__c</field>
+    <field>Lead.Org_Preferred_Property_Type__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>Lead.CBRE_Square_Footage_c__c</field>
+    <field>Lead.Org_Square_Footage_c__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
@@ -16835,7 +16835,7 @@
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>MDM_Property_Staging__c.Is_CBRE_Owner__c</field>
+    <field>MDM_Property_Staging__c.Is_Org_Owner__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
@@ -17865,7 +17865,7 @@
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>Opportunity.Actual_CBRE_Gross_Fee__c</field>
+    <field>Opportunity.Actual_Org_Gross_Fee__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
@@ -18075,32 +18075,32 @@
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>Opportunity.CBRE_360__c</field>
+    <field>Opportunity.Org_360__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>Opportunity.CBRE_Market_Group__c</field>
+    <field>Opportunity.Org_Market_Group__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>Opportunity.CBRE_Office__c</field>
+    <field>Opportunity.Org_Office__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>Opportunity.CBRE_Preferred_Property_Type_c__c</field>
+    <field>Opportunity.Org_Preferred_Property_Type_c__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>Opportunity.CBRE_Role__c</field>
+    <field>Opportunity.Org_Role__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>Opportunity.CBRE_Submarket_Group__c</field>
+    <field>Opportunity.Org_Submarket_Group__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
@@ -20390,7 +20390,7 @@
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>OpportunityTeamMember.CBRE_Commission__c</field>
+    <field>OpportunityTeamMember.Org_Commission__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
@@ -21120,12 +21120,12 @@
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>Opportunity_Team_Installments__c.CBREProfessional_User__c</field>
+    <field>Opportunity_Team_Installments__c.OrgProfessional_User__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>Opportunity_Team_Installments__c.CBRE_Professional__c</field>
+    <field>Opportunity_Team_Installments__c.Org_Professional__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
@@ -22010,7 +22010,7 @@
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>Property__c.CBRE_Managed__c</field>
+    <field>Property__c.Org_Managed__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
@@ -22260,7 +22260,7 @@
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>Property__c.Owned_by_CBRE__c</field>
+    <field>Property__c.Owned_by_Org__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
@@ -22695,12 +22695,12 @@
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>SPOC__c.CBRE_SPOC_Email__c</field>
+    <field>SPOC__c.Org_SPOC_Email__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>SPOC__c.CBRE_SPOC_Employee__c</field>
+    <field>SPOC__c.Org_SPOC_Employee__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
@@ -23700,7 +23700,7 @@
   </fieldPermissions>
   <fieldPermissions>
     <editable>false</editable>
-    <field>User.CBRE_Employee_ID__c</field>
+    <field>User.Org_Employee_ID__c</field>
     <readable>false</readable>
   </fieldPermissions>
   <fieldPermissions>
@@ -24154,7 +24154,8 @@
     <readable>false</readable>
   </fieldPermissions>
   <hasActivationRequired>false</hasActivationRequired>
-  <label>Allow updates to Key Client and Pursuit Account LOB fields on Account</label>
+  <label>Account Competitor Permission</label>
+  <license>Salesforce</license>
   <pageAccesses>
     <apexPage>APACInvestorLeadPage</apexPage>
     <enabled>false</enabled>
@@ -24776,8 +24777,8 @@
     <visible>false</visible>
   </recordTypeVisibilities>
   <recordTypeVisibilities>
-    <recordType>Account.CBRE_Account</recordType>
-    <visible>false</visible>
+    <recordType>Account.Org_Account</recordType>
+    <visible>true</visible>
   </recordTypeVisibilities>
   <recordTypeVisibilities>
     <recordType>Account.Chinese_Simplified_Pending_Translation</recordType>
@@ -24872,11 +24873,11 @@
     <visible>false</visible>
   </recordTypeVisibilities>
   <recordTypeVisibilities>
-    <recordType>Contact.CBRE_Client_Contact</recordType>
+    <recordType>Contact.Org_Client_Contact</recordType>
     <visible>false</visible>
   </recordTypeVisibilities>
   <recordTypeVisibilities>
-    <recordType>Contact.CBRE_Employee_Contact</recordType>
+    <recordType>Contact.Org_Employee_Contact</recordType>
     <visible>false</visible>
   </recordTypeVisibilities>
   <recordTypeVisibilities>
@@ -24920,7 +24921,7 @@
     <visible>false</visible>
   </recordTypeVisibilities>
   <recordTypeVisibilities>
-    <recordType>Investor_Preferences__c.CBRE_APAC_Subscriptions</recordType>
+    <recordType>Investor_Preferences__c.Org_APAC_Subscriptions</recordType>
     <visible>false</visible>
   </recordTypeVisibilities>
   <recordTypeVisibilities>
@@ -25432,6 +25433,10 @@
     <visibility>None</visibility>
   </tabSettings>
   <tabSettings>
+    <tab>standard-Account</tab>
+    <visibility>None</visibility>
+  </tabSettings>
+  <tabSettings>
     <tab>standard-Asset</tab>
     <visibility>None</visibility>
   </tabSettings>
@@ -25444,7 +25449,59 @@
     <visibility>None</visibility>
   </tabSettings>
   <tabSettings>
+    <tab>standard-Contact</tab>
+    <visibility>None</visibility>
+  </tabSettings>
+  <tabSettings>
+    <tab>standard-Contract</tab>
+    <visibility>None</visibility>
+  </tabSettings>
+  <tabSettings>
+    <tab>standard-DuplicateRecordSet</tab>
+    <visibility>None</visibility>
+  </tabSettings>
+  <tabSettings>
+    <tab>standard-Lead</tab>
+    <visibility>None</visibility>
+  </tabSettings>
+  <tabSettings>
+    <tab>standard-Macro</tab>
+    <visibility>None</visibility>
+  </tabSettings>
+  <tabSettings>
+    <tab>standard-Opportunity</tab>
+    <visibility>None</visibility>
+  </tabSettings>
+  <tabSettings>
+    <tab>standard-Pricebook2</tab>
+    <visibility>None</visibility>
+  </tabSettings>
+  <tabSettings>
+    <tab>standard-Product2</tab>
+    <visibility>None</visibility>
+  </tabSettings>
+  <tabSettings>
+    <tab>standard-Quote</tab>
+    <visibility>None</visibility>
+  </tabSettings>
+  <tabSettings>
+    <tab>standard-Scorecard</tab>
+    <visibility>None</visibility>
+  </tabSettings>
+  <tabSettings>
+    <tab>standard-SocialPersona</tab>
+    <visibility>None</visibility>
+  </tabSettings>
+  <tabSettings>
+    <tab>standard-SocialPost</tab>
+    <visibility>None</visibility>
+  </tabSettings>
+  <tabSettings>
     <tab>standard-Solution</tab>
+    <visibility>None</visibility>
+  </tabSettings>
+  <tabSettings>
+    <tab>standard-StreamingChannel</tab>
     <visibility>None</visibility>
   </tabSettings>
   <tabSettings>
