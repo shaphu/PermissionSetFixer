@@ -9,7 +9,7 @@ for field in $(cat fields.txt); do
   do
     echo "PermSet file: $i"
     echo "Start processing ...."
-    echo "xml ed -d "//_:classAccesses[_:apexClass = "\"$field"\"]" $i > new/$i"
+    #echo "xml ed -d "//_:classAccesses[_:apexClass = "\"$field"\"]" $i > new/$i"
     xml ed -d "//_:classAccesses[_:apexClass = "\"$field"\"]" $i > new/$i
     echo "Completed processing ...."
   done
